@@ -92,7 +92,7 @@ This project uses the following tools:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/mai201-assignment2-data-validation.git
+git clone https://github.com/Chipemba/mai201-assignment2-data-validation.git
 cd mai201-assignment2-data-validation
 ```
 
