@@ -1,0 +1,776 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "customer_data_source-customer_data_asset",
+          "column": "customer_id"
+        },
+        "meta": {},
+        "id": "48815d6f-eb54-4c01-8fb4-6e74a93c760b"
+      },
+      "result": {
+        "element_count": 5015,
+        "unexpected_count": 150,
+        "unexpected_percent": 2.991026919242273,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          20,
+          57,
+          107,
+          123,
+          145,
+          152,
+          232,
+          244,
+          272,
+          296,
+          342,
+          351,
+          399,
+          455,
+          468,
+          493,
+          528,
+          529,
+          540,
+          541
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "customer_data_source-customer_data_asset",
+          "column": "age",
+          "min_value": 0.0,
+          "max_value": 120.0
+        },
+        "meta": {},
+        "id": "063bfcb2-7112-4626-8e9f-991e5b2d0b61"
+      },
+      "result": {
+        "element_count": 5015,
+        "unexpected_count": 384,
+        "unexpected_percent": 7.8882497945768275,
+        "partial_unexpected_list": [
+          999.0,
+          -25.0,
+          500.0,
+          -5.0,
+          300.0,
+          -25.0,
+          999.0,
+          200.0,
+          200.0,
+          -50.0,
+          300.0,
+          -50.0,
+          200.0,
+          -10.0,
+          -25.0,
+          999.0,
+          180.0,
+          999.0,
+          150.0,
+          -999.0
+        ],
+        "missing_count": 147,
+        "missing_percent": 2.931206380857428,
+        "unexpected_percent_total": 7.657028913260219,
+        "unexpected_percent_nonmissing": 7.8882497945768275,
+        "partial_unexpected_counts": [
+          {
+            "value": 999.0,
+            "count": 4
+          },
+          {
+            "value": -25.0,
+            "count": 3
+          },
+          {
+            "value": 200.0,
+            "count": 3
+          },
+          {
+            "value": -50.0,
+            "count": 2
+          },
+          {
+            "value": 300.0,
+            "count": 2
+          },
+          {
+            "value": -999.0,
+            "count": 1
+          },
+          {
+            "value": -10.0,
+            "count": 1
+          },
+          {
+            "value": -5.0,
+            "count": 1
+          },
+          {
+            "value": 150.0,
+            "count": 1
+          },
+          {
+            "value": 180.0,
+            "count": 1
+          },
+          {
+            "value": 500.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          8,
+          17,
+          23,
+          33,
+          36,
+          41,
+          52,
+          55,
+          78,
+          102,
+          106,
+          116,
+          120,
+          122,
+          131,
+          136,
+          146,
+          180,
+          196
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_match_regex",
+        "kwargs": {
+          "batch_id": "customer_data_source-customer_data_asset",
+          "column": "email",
+          "regex": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+        },
+        "meta": {},
+        "id": "a8c8af41-6df3-4395-8fae-3c6561def882"
+      },
+      "result": {
+        "element_count": 5015,
+        "unexpected_count": 346,
+        "unexpected_percent": 7.559536814507319,
+        "partial_unexpected_list": [
+          "@domain.com",
+          "invalid-email",
+          "user@@domain.com",
+          "no-dot@com",
+          "user@",
+          "user@@domain.com",
+          "no-dot@com",
+          "missingatsign.com",
+          "missingatsign.com",
+          "missingatsign.com",
+          "user@@domain.com",
+          "missingatsign.com",
+          "user@.com",
+          "user name@domain.com",
+          "multiple@issues@invalid",
+          "user@",
+          "user@",
+          "user@domain.",
+          "@domain.com",
+          "invalid-email"
+        ],
+        "missing_count": 438,
+        "missing_percent": 8.733798604187438,
+        "unexpected_percent_total": 6.899302093718844,
+        "unexpected_percent_nonmissing": 7.559536814507319,
+        "partial_unexpected_counts": [
+          {
+            "value": "missingatsign.com",
+            "count": 4
+          },
+          {
+            "value": "user@",
+            "count": 3
+          },
+          {
+            "value": "user@@domain.com",
+            "count": 3
+          },
+          {
+            "value": "@domain.com",
+            "count": 2
+          },
+          {
+            "value": "invalid-email",
+            "count": 2
+          },
+          {
+            "value": "no-dot@com",
+            "count": 2
+          },
+          {
+            "value": "multiple@issues@invalid",
+            "count": 1
+          },
+          {
+            "value": "user name@domain.com",
+            "count": 1
+          },
+          {
+            "value": "user@.com",
+            "count": 1
+          },
+          {
+            "value": "user@domain.",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          3,
+          18,
+          37,
+          57,
+          107,
+          111,
+          122,
+          141,
+          157,
+          165,
+          175,
+          176,
+          177,
+          191,
+          196,
+          197,
+          198,
+          222,
+          235,
+          242
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "customer_data_source-customer_data_asset",
+          "column": "salary",
+          "mostly": 0.95
+        },
+        "meta": {},
+        "id": "848704f0-1b72-452f-a045-d2af6dc4412c"
+      },
+      "result": {
+        "element_count": 5015,
+        "unexpected_count": 425,
+        "unexpected_percent": 8.47457627118644,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          7,
+          15,
+          16,
+          42,
+          56,
+          63,
+          72,
+          81,
+          83,
+          87,
+          94,
+          97,
+          98,
+          103,
+          109,
+          148,
+          156,
+          157,
+          161,
+          172
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "customer_data_source-customer_data_asset",
+          "column": "country",
+          "value_set": [
+            "USA",
+            "Canada",
+            "UK",
+            "Australia"
+          ]
+        },
+        "meta": {},
+        "id": "e7f89741-f3b6-440a-be24-1d625928bb55"
+      },
+      "result": {
+        "element_count": 5015,
+        "unexpected_count": 301,
+        "unexpected_percent": 6.051467631684761,
+        "partial_unexpected_list": [
+          "India",
+          "Spain",
+          "Brazil",
+          "Brazil",
+          "Brazil",
+          "Mexico",
+          "Spain",
+          "Mexico",
+          "Germany",
+          "Mexico",
+          "Brazil",
+          "Spain",
+          "Germany",
+          "China",
+          "InvalidCountry",
+          "Germany",
+          "Mexico",
+          "India",
+          "Germany",
+          "Mexico"
+        ],
+        "missing_count": 41,
+        "missing_percent": 0.8175473579262214,
+        "unexpected_percent_total": 6.001994017946162,
+        "unexpected_percent_nonmissing": 6.051467631684761,
+        "partial_unexpected_counts": [
+          {
+            "value": "Mexico",
+            "count": 5
+          },
+          {
+            "value": "Brazil",
+            "count": 4
+          },
+          {
+            "value": "Germany",
+            "count": 4
+          },
+          {
+            "value": "Spain",
+            "count": 3
+          },
+          {
+            "value": "India",
+            "count": 2
+          },
+          {
+            "value": "China",
+            "count": 1
+          },
+          {
+            "value": "InvalidCountry",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          3,
+          14,
+          28,
+          41,
+          96,
+          105,
+          110,
+          115,
+          130,
+          164,
+          167,
+          177,
+          192,
+          194,
+          196,
+          199,
+          208,
+          225,
+          227,
+          244
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_match_strftime_format",
+        "kwargs": {
+          "batch_id": "customer_data_source-customer_data_asset",
+          "column": "signup_date",
+          "strftime_format": "%Y-%m-%d"
+        },
+        "meta": {},
+        "id": "ab2bc156-157c-4d9f-8c54-c4c8c487d894"
+      },
+      "result": {
+        "element_count": 5015,
+        "unexpected_count": 5001,
+        "unexpected_percent": 100.0,
+        "partial_unexpected_list": [
+          "9/22/2023",
+          "2/25/2023",
+          "9/15/2023",
+          "8/6/2023",
+          "5/28/2023",
+          "10/7/2023",
+          "7/29/2023",
+          "10/2/2023",
+          "4/14/2023",
+          "5/1/2023",
+          "10/23/2023",
+          "5/4/2023",
+          "6/17/2023",
+          "5/20/2023",
+          "6/25/2023",
+          "12/1/2023",
+          "3/18/2023",
+          "2/9/2023",
+          "1/11/2023",
+          "1/8/2023"
+        ],
+        "missing_count": 14,
+        "missing_percent": 0.2791625124626122,
+        "unexpected_percent_total": 99.72083748753738,
+        "unexpected_percent_nonmissing": 100.0,
+        "partial_unexpected_counts": [
+          {
+            "value": "1/11/2023",
+            "count": 1
+          },
+          {
+            "value": "1/8/2023",
+            "count": 1
+          },
+          {
+            "value": "10/2/2023",
+            "count": 1
+          },
+          {
+            "value": "10/23/2023",
+            "count": 1
+          },
+          {
+            "value": "10/7/2023",
+            "count": 1
+          },
+          {
+            "value": "12/1/2023",
+            "count": 1
+          },
+          {
+            "value": "2/25/2023",
+            "count": 1
+          },
+          {
+            "value": "2/9/2023",
+            "count": 1
+          },
+          {
+            "value": "3/18/2023",
+            "count": 1
+          },
+          {
+            "value": "4/14/2023",
+            "count": 1
+          },
+          {
+            "value": "5/1/2023",
+            "count": 1
+          },
+          {
+            "value": "5/20/2023",
+            "count": 1
+          },
+          {
+            "value": "5/28/2023",
+            "count": 1
+          },
+          {
+            "value": "5/4/2023",
+            "count": 1
+          },
+          {
+            "value": "6/17/2023",
+            "count": 1
+          },
+          {
+            "value": "6/25/2023",
+            "count": 1
+          },
+          {
+            "value": "7/29/2023",
+            "count": 1
+          },
+          {
+            "value": "8/6/2023",
+            "count": 1
+          },
+          {
+            "value": "9/15/2023",
+            "count": 1
+          },
+          {
+            "value": "9/22/2023",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "customer_data_source-customer_data_asset",
+          "min_value": 500,
+          "max_value": 1000
+        },
+        "meta": {},
+        "id": "c3bc3f19-1224-478c-b4ee-188426b5be45"
+      },
+      "result": {
+        "observed_value": 5015
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "customer_data_expectations",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 7,
+    "successful_expectations": 0,
+    "unsuccessful_expectations": 7,
+    "success_percent": 0.0
+  },
+  "meta": {
+    "great_expectations_version": "1.3.0",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260627T032627.268538Z",
+      "pandas_data_fingerprint": "3f15db136bd43b933746e246b9b670a1"
+    },
+    "active_batch_definition": {
+      "datasource_name": "customer_data_source",
+      "data_connector_name": "fluent",
+      "data_asset_name": "customer_data_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    },
+    "validation_id": "7e288d20-3ce1-4a71-9d91-03c839add021",
+    "checkpoint_id": null,
+    "batch_parameters": {
+      "dataframe": "<DATAFRAME>"
+    }
+  },
+  "id": null
+}

@@ -1,0 +1,109 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Great Expectations Validation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 40px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            .summary {
+                margin-bottom: 20px;
+                padding: 15px;
+                background-color: #f8f8f8;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Great Expectations Validation Report</h1>
+
+        <div class="summary">
+            <p><strong>Expectation Suite:</strong> customer_data_expectations</p>
+            <p><strong>Dataset:</strong> customer_data.csv</p>
+            <p><strong>Overall Success:</strong> False</p>
+            <p><strong>Total Expectations Evaluated:</strong> 7</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Expectation</th>
+                <th>Column</th>
+                <th>Status</th>
+                <th>Unexpected Count</th>
+                <th>Element Count</th>
+            </tr>
+            
+            <tr>
+                <td>expect_column_values_to_not_be_null</td>
+                <td>customer_id</td>
+                <td>FAIL</td>
+                <td>150</td>
+                <td>5015</td>
+            </tr>
+            
+            <tr>
+                <td>expect_column_values_to_be_between</td>
+                <td>age</td>
+                <td>FAIL</td>
+                <td>384</td>
+                <td>5015</td>
+            </tr>
+            
+            <tr>
+                <td>expect_column_values_to_match_regex</td>
+                <td>email</td>
+                <td>FAIL</td>
+                <td>346</td>
+                <td>5015</td>
+            </tr>
+            
+            <tr>
+                <td>expect_column_values_to_not_be_null</td>
+                <td>salary</td>
+                <td>FAIL</td>
+                <td>425</td>
+                <td>5015</td>
+            </tr>
+            
+            <tr>
+                <td>expect_column_values_to_be_in_set</td>
+                <td>country</td>
+                <td>FAIL</td>
+                <td>301</td>
+                <td>5015</td>
+            </tr>
+            
+            <tr>
+                <td>expect_column_values_to_match_strftime_format</td>
+                <td>signup_date</td>
+                <td>FAIL</td>
+                <td>5001</td>
+                <td>5015</td>
+            </tr>
+            
+            <tr>
+                <td>expect_table_row_count_to_be_between</td>
+                <td>TABLE</td>
+                <td>FAIL</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            
+        </table>
+    </body>
+    </html>
+    
