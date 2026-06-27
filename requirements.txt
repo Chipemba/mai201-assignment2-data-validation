@@ -1,0 +1,4 @@
+pandas
+pytest
+great_expectations
+jupyter
